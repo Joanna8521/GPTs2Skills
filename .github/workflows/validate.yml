@@ -1,0 +1,30 @@
+name: Validate GPTs Transform
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Run structural regression tests
+        run: python -m unittest discover -s skill/tests -v
+      - name: Check Skill metadata
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p=Path("skill/SKILL.md")
+          assert p.is_file()
+          s=p.read_text(encoding="utf-8")
+          assert s.startswith("---\n")
+          assert "\nname:" in s and "\ndescription:" in s
+          assert Path("skill/agents/openai.yaml").is_file()
+          print("Skill metadata checks passed")
+          PY
