@@ -18,3 +18,7 @@ GPTs2Skills 將 Custom GPTs、Gemini Gems 的方法論轉換為結構化、可�
 
 ## 授權：禁止商業使用
 本專案採用 **PolyForm Noncommercial License 1.0.0**，原始碼可公開檢視，符合授權條件者可基於非商業用途使用、修改及分享。**不允許未經另行授權的商業用途**。例如商業產品整合、轉售、提供付費 SaaS 等，請先取得權利人書面授權。教育機構的適用範圍以正式授權條款為準；不能只憑此摘要推論所有付費課程必然受禁。這是 Source-Available（原始碼公開），不是符合 OSI 定義的 Open Source。
+
+## 作者社群
+
+Facebook：https://www.facebook.com/wang.joan.888
