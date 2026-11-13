@@ -44,3 +44,7 @@ python -m unittest discover -s skill/tests -v
 **Source-available; noncommercial use only.** Licensed under the [PolyForm Noncommercial License 1.0.0](LICENSE.md). This project is **not OSI open source**. Business, paid-course, resale, SaaS and other commercial uses may need separate written permission. See license terms for precise scope.
 
 Copyright (c) 2026 Joanna8521.
+
+## Community
+
+Facebook: https://www.facebook.com/wang.joan.888
